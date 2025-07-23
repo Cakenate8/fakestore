@@ -28,14 +28,14 @@ function ProductList() {
     }, [])
 
 
-    if (loading) return <p>Loading products...</p>
+    if (loading) return <p>LOADING PRODUCT...</p>
     if (error) return <p>{error}</p>
 
 
 
     return (
         <>           
-            <h1 className="mx-5 mt-3">Products</h1>
+            <h1 className="mx-5 mt-3">PRODUCTS</h1>
             <Container className="my-3">
                 <Row className="justify-content-center">
                     {products.map((product) => (
@@ -47,7 +47,7 @@ function ProductList() {
                                         display: "flex",
                                         alignItems: "center",
                                         justifyContent: "center",
-                                        background: "#f8f9fa"
+                                        background: "#191a1bff"
                                     }}
                                 >
                                     <Card.Img
@@ -71,13 +71,13 @@ function ProductList() {
                                 <Link
                                     style={{
                                         fontSize: "1rem",
-                                        margin: "8px 20px",
+                                        margin: "10px 22px",
                                         textAlign: "center"
                                     }}
                                     className="custom-button"
                                     to={`/products/${product.id}`}
                                 >
-                                    View Details
+                                    Details
                                 </Link>
                             </Card>
                         </Col>

@@ -54,15 +54,15 @@ function SaleCarousel() {
                       src={product.image}
                       alt={product.title}
                       style={{
-                        height: "150px",
+                        height: "155px",
                         objectFit: "contain",
-                        padding: "10px"
+                        padding: "12px"
                       }}
                     />
                     <Card.Body style = {{display: "flex", flexDirection: "column"}} >
                       <Card.Title
                         style={{
-                          fontSize: "clamp(1rem, 2vw, 1.1rem)",
+                          fontSize: "clamp(1rem, 2vw, 1.rem)",
                           whiteSpace: "nowrap",
                           overflow: "hidden",
                           textOverflow: "ellipsis"
@@ -75,7 +75,7 @@ function SaleCarousel() {
                         <span style={{ textDecoration: "line-through", color: "#890", marginRight: "5px" }}>
                           ${product.price}
                         </span>
-                        <span style={{ color: "#b82929ff"}}>
+                        <span style={{ color: "#9e2525ff"}}>
                           ${discountedPrice}
                         </span>
                       </Card.Text>

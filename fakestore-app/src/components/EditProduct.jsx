@@ -19,7 +19,7 @@ function EditProduct({ onUpdate }) {
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(true);
 
-    // Fetch product data and set as default values
+    
     useEffect(() => {
         if (productId) {
             axios.get(`https://fakestoreapi.com/products/${productId}`)
@@ -66,7 +66,7 @@ function EditProduct({ onUpdate }) {
     return (
         <Container className="mt-5">
             <h1>Edit Product</h1>
-            {submitted && <Alert variant="success">Product updated successfully!</Alert>}
+            {submitted && <Alert variant="success">Product Updated Correctly!</Alert>}
             {error && <Alert variant="danger">{error}</Alert>}
 
             <Form onSubmit={handleSubmit}>
