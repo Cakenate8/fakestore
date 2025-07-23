@@ -7,7 +7,7 @@ import Alert from "react-bootstrap/Alert";
 
 function AddProduct() {
 
-    // const [product, setProduct] = useState();
+    
     const [submitted, setSubmitted] = useState(false);
     const [error, setError] = useState(null)
     const[formData, setFormData] = useState({
@@ -16,7 +16,6 @@ function AddProduct() {
         price: '',
         inmage: '',
     });
-
 
     const handeChange = (e) => {
         const { name, value } =e.target;
@@ -45,7 +44,7 @@ function AddProduct() {
     return (
 
         <Container className="mt-5">
-            <h1>Add New Product</h1>
+            <h1>Add A New Product</h1>
             {submitted && <Alert variant="success">Product added successfully!</Alert>}
             {error && <Alert variant="danger">{error}</Alert>}
 
@@ -62,21 +61,21 @@ function AddProduct() {
                 </Form.Group>
 
                 <Form.Group className="mb-3">
-                    <Form.Label>Category</Form.Label>
+                    <Form.Label>What is it?</Form.Label>
                     <Form.Control type="text" name="category" placeholder="Enter a category" value={formData.category} onChange={handeChange} required />
                 </Form.Group>    
 
                 <Form.Group className="mb-3">
-                    <Form.Label>Price</Form.Label>
+                    <Form.Label>Cost</Form.Label>
                     <Form.Control type="number" name="price" placeholder="Enter a price" value={formData.price} onChange={handeChange} required />
                 </Form.Group>
 
                 <Form.Group className="mb-3">
-                    <Form.Label>Image URL</Form.Label>
-                    <Form.Control type="text" name="image" placeholder="Enter a image url" value={formData.image} onChange={handeChange} required />
+                    <Form.Label>Picture</Form.Label>
+                    <Form.Control type="text" name="image" placeholder="Enter a image url" value={formData.inmage} onChange={handeChange} required />
                 </Form.Group>
 
-                <Button variant="dark" type="submit">Add Product</Button>
+                <Button variant="dark" type="submit">Add the Product</Button>
                 
             </Form>
         </Container>

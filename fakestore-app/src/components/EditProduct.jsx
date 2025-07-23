@@ -7,7 +7,7 @@ import Alert from "react-bootstrap/Alert";
 import { useParams } from "react-router-dom";
 
 function EditProduct({ onUpdate }) {
-    const { id } = useParams(); // get id from URL
+    const { id } = useParams();
     const productId = id;
     const [formData, setFormData] = useState({
         title: '',
@@ -83,7 +83,7 @@ function EditProduct({ onUpdate }) {
                 </Form.Group>
 
                 <Form.Group className="mb-3">
-                    <Form.Label>Description</Form.Label>
+                    <Form.Label>What is it?</Form.Label>
                     <Form.Control
                         type="text"
                         name="description"
@@ -95,7 +95,7 @@ function EditProduct({ onUpdate }) {
                 </Form.Group>
 
                 <Form.Group className="mb-3">
-                    <Form.Label>Price</Form.Label>
+                    <Form.Label>Cost</Form.Label>
                     <Form.Control
                         type="number"
                         name="price"
@@ -107,7 +107,7 @@ function EditProduct({ onUpdate }) {
                 </Form.Group>
 
                 <Form.Group className="mb-3">
-                    <Form.Label>Image URL</Form.Label>
+                    <Form.Label>Picture</Form.Label>
                     <Form.Control
                         type="text"
                         name="image"

@@ -17,13 +17,11 @@ function NavBar() {
                     <Nav className="me-auto">
                         <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link href="/products">Products</Nav.Link>
-                        {/* <Nav.Link href="/about">All About Fake</Nav.Link>
-                        <Nav.Link href="/contact">Contact Us</Nav.Link> */}
-                        <NavDropdown title="Admin Access" id="basic-nav-dropdown">
+                        <NavDropdown title="Edit Products" id="basic-nav-dropdown">
                             <NavDropdown.Item href="/addproduct">
                                 Add products
                             </NavDropdown.Item>
-                            <NavDropdown.Item href="/editproduct/1">Update Products</NavDropdown.Item>
+                            <NavDropdown.Item href="/editproduct/1">Edit Products</NavDropdown.Item>
                         </NavDropdown>
                         
                     </Nav>

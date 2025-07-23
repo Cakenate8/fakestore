@@ -45,7 +45,6 @@ function SaleCarousel() {
           <Carousel.Item key={idx}>
             <CardGroup>
               {group.map(product => {
-                // Calculate a fake discount (e.g., 20% off)
                 const discountPercent = 20;
                 const discountedPrice = (product.price * (1 - discountPercent / 100)).toFixed(2);
                 return (
@@ -73,10 +72,10 @@ function SaleCarousel() {
                         {product.title}
                       </Card.Title>
                       <Card.Text>
-                        <span style={{ textDecoration: "line-through", color: "#888", marginRight: "8px" }}>
+                        <span style={{ textDecoration: "line-through", color: "#890", marginRight: "5px" }}>
                           ${product.price}
                         </span>
-                        <span style={{ color: "#d32f2f", fontWeight: "bold" }}>
+                        <span style={{ color: "#b82929ff"}}>
                           ${discountedPrice}
                         </span>
                       </Card.Text>
